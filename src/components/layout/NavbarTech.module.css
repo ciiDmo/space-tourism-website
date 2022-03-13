@@ -1,0 +1,46 @@
+.main {
+    align-items: center;
+}
+
+.main ul {
+    display: block;
+    padding: 0 0 0 0;
+    margin: 14.4rem 0 0 0;
+}
+
+.main li {
+    list-style-type: none;
+    margin: 0 0 8rem 0;
+}
+
+.tech {
+    font-size: 3.5rem;
+    margin: 0 0 0 0;
+    color: white;
+    border: 0.1rem solid rgba(255, 255, 255, 0.26);
+    padding: 2rem 3.2rem 2rem 3.2rem;
+    border-radius: 25rem;
+    font-family: 'Bellefair', serif;
+    font-weight: 200;
+    text-decoration: none;
+    transition-property: all;
+    transition-timing-function: ease-in-out 8s;
+}
+
+.numberOne {
+    padding: 2rem 3.5rem 2rem 3.5rem;
+}
+
+/*EFEITO DE ACTIVE, HOVER E IDLE DO NAVBAR*/
+.techActived {
+    background-color: white;
+    border: 0.1rem solid white;
+    color: rgb(11,13,23);
+}
+
+.techHovered:hover {
+    border: 0.1rem solid white;
+    transform: scaleX(0);
+    transition: all 0.8s ease 0s;
+}
+/*===================================================*/

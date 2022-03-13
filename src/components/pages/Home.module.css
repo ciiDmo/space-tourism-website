@@ -1,0 +1,74 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    background: url('../../img/bg-home.jpg');
+    background-size: cover;
+    background-clip: border-box;
+}
+
+.navbar {
+    max-width: 100vw;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.bodier {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.info {
+    flex-direction: column;
+    color: white;
+    margin: 32rem auto auto 16.8rem;
+    max-width: 55rem;
+}
+
+.info h1 {    
+    font-size: 10.8rem;
+    font-family: 'Bellefair', serif;
+    font-weight: 200;
+    margin: 2rem 0 1.54rem 0;
+}
+
+.info h5 {
+    font-size: 2.1rem;
+    letter-spacing: 0.475rem;
+    margin: 0;    
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+}
+
+.info p {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+    line-height: 3rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 200;
+    margin: 0;
+}
+
+.explore {
+    margin: 45rem 16rem 0 0;
+    position: static;
+}
+
+.explore a:hover {    
+    box-shadow: 0 0 0 8rem rgba(255, 255, 255, 0.123);
+}
+
+.explorePath {
+    text-decoration: none;
+    color: rgb(11,13,23);
+    font-size: 2.5rem;
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    padding: 11.3rem 6.6rem 11.7rem 6.6rem;
+    background-color: white;
+    border-radius: 25rem;
+    transition-timing-function: ease-in-out;
+    transition: 0.8s;
+}

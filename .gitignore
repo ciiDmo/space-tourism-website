@@ -18,6 +18,9 @@
 .env.test.local
 .env.production.local
 
+#starter-files
+/starter-files
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
