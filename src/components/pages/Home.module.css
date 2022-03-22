@@ -21,7 +21,7 @@
 .info {
     flex-direction: column;
     color: white;
-    margin: 32rem auto auto 16.8rem;
+    margin: 25rem auto auto 16.8rem;
     max-width: 55rem;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .explore {
-    margin: 45rem 16rem 0 0;
+    margin: 38rem 10rem 0 0;
     position: static;
 }
 

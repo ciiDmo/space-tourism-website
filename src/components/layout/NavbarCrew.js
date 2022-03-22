@@ -1,15 +1,25 @@
-import {Link } from 'react-router-dom'
-
 import styles from './NavbarCrew.module.css'
 
-function NavbarCrew({customCommander, customSpecialist, customPilot, customEngineer}) {
+function NavbarCrew({customCommander, customSpecialist, customPilot, customEngineer, setCrewSon}) {
     return (
         <nav className={styles.main}>
             <ul>
-                <li><Link to="/CrewDoug" className={`${styles.crew} ${styles[customCommander]}`} /></li>
-                <li><Link to="/CrewMark" className={`${styles.crew} ${styles[customSpecialist]}`} /></li>
-                <li><Link to="/CrewVictor" className={`${styles.crew} ${styles[customPilot]}`} /></li>
-                <li><Link to="/CrewNou" className={`${styles.crew} ${styles[customEngineer]}`} /></li>
+                <li
+                    id='commander'
+                    onClick={(e) => {setCrewSon(e.target.id)}}
+                    className={`${styles.crew} ${styles[customCommander]}`} ></li>
+                <li
+                    id='specialist'
+                    onClick={(e) => {setCrewSon(e.target.id)}}
+                    className={`${styles.crew} ${styles[customSpecialist]}`} ></li>
+                <li 
+                    id='pilot'
+                    onClick={(e) => {setCrewSon(e.target.id)}}
+                    className={`${styles.crew} ${styles[customPilot]}`}></li>
+                <li
+                    id='engineer'
+                    onClick={(e) => {setCrewSon(e.target.id)}}
+                    className={`${styles.crew} ${styles[customEngineer]}`}></li>
             </ul>            
         </nav>
     )

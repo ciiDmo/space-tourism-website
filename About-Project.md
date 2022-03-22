@@ -12,6 +12,7 @@ This is a solution to the [Space Tourism Website](https://www.frontendmentor.io/
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+  - [Acknowledgments](#Acknowledgments)
 - [Author](#author)
 
 ## Overview
@@ -102,6 +103,10 @@ I taped the props use too.
 
 With this exercise I learned a lot of CSS codes, improving my abilities in this area making me so much proud of myself. Like the same case about the React.js.
 I catched this exercise thinking if I could make. But I didnt give up, now you can see the result of my perseverance and my thirst of knoledge. I'm so happy and I intend to keep growing.
+
+## Acknowledgments
+
+I would thank my brother-in-law André, for helpme with a lot of things in this project.
 
 ## Author
 

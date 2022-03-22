@@ -15,7 +15,8 @@
 .crew {
     margin: 0 2.5rem 0 0;
     background-color: rgba(255, 255, 255, 0.178);
-    padding: .25rem 0.75rem .25rem 0.75rem;border-radius: 25rem;
+    padding: .75rem 0.75rem .75rem 0.75rem;border-radius: 25rem;
+    transition: all 1s ease 0.1s;
 }
 
 /*EFEITO DE ACTIVE, HOVER E IDLE DO NAVBAR*/
@@ -25,7 +26,5 @@
 
 .crewHovered:hover {
     background-color: rgba(255, 255, 255, 0.548);
-    transform: scaleX(0);
-    transition: all 0.8s ease 0s;
 }
 /*===================================================*/

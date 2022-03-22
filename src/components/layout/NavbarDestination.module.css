@@ -11,6 +11,7 @@
 
 .main li {
     list-style-type: none;
+    cursor: pointer;
 }
 
 .destiny {
@@ -20,19 +21,21 @@
     margin: 0 3.7rem 0 0;
     letter-spacing: 0.4rem;
     font-weight: 200;
+    text-decoration: underline solid 0.35rem rgba(255, 255, 255, 0);
+    text-underline-offset: 1.5rem;
+    transition: all 1s ease 0.1s;
 }
 
 
 /*EFEITO DE ACTIVE, HOVER E IDLE DO NAVBAR*/
 .destinyActived {
     text-decoration: underline solid 0.35rem rgba(255, 255, 255);
-    text-underline-offset: 1.5rem;
+    cursor: pointer;
 }
 
 .destinyHovered:hover {
     text-decoration: underline solid 0.35rem rgba(255, 255, 255, 0.349);
-    text-underline-offset: 1.5rem;
-    transform: scaleX(0);
-    transition: all 0.8s ease 0s;
+    cursor: pointer;
 }
 /*===================================================*/
+

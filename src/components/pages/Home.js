@@ -27,7 +27,7 @@ function Home() {
                     </p>
                 </div>
                 <div className={styles.explore}>
-                    <Link to="/DestinationMoon" className={styles.explorePath}>
+                    <Link to="/Destination" className={styles.explorePath}>
                         EXPLORE
                     </Link>
                 </div>
