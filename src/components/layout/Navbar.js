@@ -1,29 +1,63 @@
-import {Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-import styles from './Navbar.module.css'
+import styles from "./Navbar.module.css";
 
-import hopeStar from '../../img/hope-star.svg'
+import hopeStar from "../../img/hope-star.svg";
+import { useState } from "react";
 
-function Navbar({customHome, customDestination, customCrew, customTechnology}) {
-    return (
-        <nav className={styles.main}>
-            <img src={hopeStar} alt='Hope Star' />
-            <div className={styles.line}></div>
-            <ul>
-                <li><Link to="/" className={`${styles.direction} ${styles[customHome]}`}>
-                    <strong>00</strong> HOME</Link>
-                </li>
-                <li><Link to="/Destination" className={`${styles.direction} ${styles[customDestination]}`}>
-                    <strong>01</strong> DESTINATION</Link>
-                </li>
-                <li><Link to="/Crew" className={`${styles.direction} ${styles[customCrew]}`}>
-                    <strong>02</strong> CREW</Link>
-                </li>
-                <li><Link to="/Technology" className={`${styles.direction} ${styles[customTechnology]}`}>
-                    <strong>03</strong> TECHNOLOGY</Link>
-                </li>
-            </ul>            
-        </nav>
-    )
+function Navbar({
+  customHome,
+  customDestination,
+  customCrew,
+  customTechnology,
+}) {
+  const [burgerMenu, setBurgerMenu] = useState('burgerEnter');
+  const [showNav, setShowNav] = useState('menuOff')
+
+  function changeMenu() {
+    if(burgerMenu==='burgerEnter') {
+      setBurgerMenu('burgerExit')
+      setShowNav('menuOn')
+      console.log(burgerMenu)
+    } else {
+      setBurgerMenu('burgerEnter')
+      setShowNav('menuOff')
+      console.log(burgerMenu)
+    }
+
+  }
+
+  return (
+    <nav className={styles.main}>
+      <img src={hopeStar} alt="Hope Star" />
+      <div className={styles.line}></div>
+      <div
+        className={`${styles.burger} ${styles[burgerMenu]}`}
+        onClick={changeMenu}
+      ></div>
+      <ul className={`${styles.menu} ${styles[showNav]}`}>
+        <li className={`${styles.direction} ${styles[customHome]}`}>
+          <Link to="/" className={`${styles.tagA}`}>
+            <strong>00 </strong>HOME
+          </Link>
+        </li>
+        <li className={`${styles.direction} ${styles[customDestination]}`}>
+          <Link to="/Destination" className={`${styles.tagA}`}>
+            <strong>01 </strong>DESTINATION
+          </Link>
+        </li>
+        <li className={`${styles.direction} ${styles[customCrew]}`}>
+          <Link to="/Crew" className={`${styles.tagA}`}>
+            <strong>02 </strong>CREW
+          </Link>
+        </li>
+        <li className={`${styles.direction} ${styles[customTechnology]}`}>
+          <Link to="/Technology" className={`${styles.tagA}`}>
+            <strong>03 </strong>TECHNOLOGY
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  );
 }
-export default Navbar
+export default Navbar;
