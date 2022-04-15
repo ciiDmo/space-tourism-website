@@ -11,20 +11,21 @@
 .bodier {
     width: 100vw;
     display: inline-flex;
+    justify-content: space-evenly;
 }
 
 .title {
-    min-width: 40%;
+    max-width: 50%;
     height: 100%;
+    margin-left: 10rem;
 }
 
 .subTitle {
     font-size: 2.5rem;
-    letter-spacing: 0.475rem;
-    margin: 0;    
+    letter-spacing: 0.475rem; 
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 300;
-    margin: 8.5rem auto 0 23rem;
+    margin: 8.5rem auto auto auto;
 }
 
 .subTitle strong {
@@ -34,13 +35,14 @@
 
 .title img {
     width: 44.7rem;
-    max-width: 44.7rem;
-    margin: 10rem 0 0 25rem;
+    padding: 10rem 0 0;
+    margin: auto;
 }
 
 .endStop {
     max-width: 44.7rem;
-    margin-left: 16.1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 .endStop h1 {
@@ -92,3 +94,93 @@
     font-weight: 200;
 }
 
+@media (max-width: 1030px) {
+    .endStop {
+        margin-left: 2rem;
+    }
+    .title img {
+        width: 38rem;
+    }
+    .subTitle {
+        font-size: 2rem;
+        margin-left: 4rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .bodier {
+        display: inline-block;
+    }
+    .title {
+        max-width: none;
+        margin: auto 4rem auto 4rem;
+    }
+    .title img {
+        padding: 0;
+        margin: 5rem auto auto auto;
+        display: flex;
+        justify-content: center;
+        width: 25rem;
+    }
+    .subTitle {
+        width: 85%;
+        margin-left: 4rem;
+        margin-top: 6rem;
+    }
+    .endStop {
+        max-width: none;
+        margin: 0 10rem 0 10rem;
+        margin-right: 10rem;
+    }
+    .endStop h1 {
+        display: flex;
+        justify-content: center;
+        margin: 4rem auto auto;
+    }
+    .endStop p {
+        margin: 2rem auto auto auto;
+        text-align: center;
+    }
+    .line {
+        width: 100%;
+        margin-top: 3rem;
+    }
+    .info h2 {
+        margin: 3.1rem auto auto;
+    }
+    .info h3 {
+        margin: 1.9rem auto auto;
+    }
+}
+
+@media (max-width: 600px) {    
+    .info{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "distance" "km" "travel" "time";
+    }
+    .info h2 {
+        margin: 3.1rem auto auto auto;
+        text-align: center;
+    }
+    .info h3 {
+        margin: 1.9rem auto auto auto;
+        text-align: center;
+    }
+    .distance {
+        grid-area: distance;
+    }
+    .km {
+        grid-area: km;
+    }
+    .travel {
+        grid-area: travel;
+    }
+    .time {
+        grid-area: time;
+    }
+    .title img {
+        width: 18rem;
+    }
+}

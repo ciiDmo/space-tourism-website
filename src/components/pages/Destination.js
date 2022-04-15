@@ -92,7 +92,7 @@ function Destination() {
                     <h5 className={styles.subTitle}>
                         <strong>01</strong> PICK YOUR DESTINATION
                     </h5>
-                    <img src={image} alt={destination} />
+                    <img  src={image} alt={destination} />
                 </div>
                 <div className={styles.endStop}>
                     <NavbarDestination 
@@ -106,10 +106,10 @@ function Destination() {
                     <p>{texto}</p>
                     <div className={styles.line}></div>
                     <div className={styles.info}>
-                        <h2>AVG. DISTANCE</h2>
-                        <h2>EST. TRAVEL TIME</h2>
-                        <h3>{distance}</h3>
-                        <h3>{timeTravel}</h3>
+                        <h2 className={styles.distance}>AVG. DISTANCE</h2>
+                        <h2 className={styles.travel}>EST. TRAVEL TIME</h2>
+                        <h3 className={styles.km}>{distance}</h3>
+                        <h3 className={styles.time}>{timeTravel}</h3>
                     </div>
                 </div>
             </div>

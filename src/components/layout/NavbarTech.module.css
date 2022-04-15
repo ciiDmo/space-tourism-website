@@ -36,9 +36,11 @@
     background-color: white;
     border: 0.1rem solid white;
     color: rgb(11,13,23);
+    cursor: pointer;
 }
 
 .techHovered:hover {
     border: 0.1rem solid white;
+    cursor: pointer;
 }
 /*===================================================*/
