@@ -1,7 +1,7 @@
 .main {
     width: 100vw;
     height: 100vh;
-    background: url('../../img/bg-home.jpg');
+    background: url('../../img/background/bg-home.jpg');
     background-size: cover;
     background-clip: border-box;
 }
@@ -81,7 +81,7 @@
         box-sizing: border-box;
     }
     .main {
-        background: url('../../img/bg-home-tablet.jpg');
+        background: url('../../img/background/bg-home-tablet.jpg');
         background-size: cover;
     }
     .info {
@@ -106,7 +106,7 @@
 
 @media (max-width: 600px) {
     .main {
-        background: url('../../img/bg-home-mobile.jpg');
+        background: url('../../img/background/bg-home-mobile.jpg');
         background-size: cover;
     }
     .info {

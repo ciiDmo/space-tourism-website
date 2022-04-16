@@ -1,7 +1,7 @@
 .main {
     width: 100vw;
     height: 100vh;
-    background: url('../../img/bg-destination.jpg');
+    background: url('../../img/background/bg-destination.jpg');
     background-size: cover;
     background-clip: border-box;
 

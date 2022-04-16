@@ -1,7 +1,7 @@
 .main {
     width: 100vw;
     height: 100vh;
-    background: url('../../img/bg-tech.jpg');
+    background: url('../../img/background/bg-tech.jpg');
     background-size: cover;
     background-clip: border-box;
 
@@ -74,4 +74,73 @@
     position: absolute;
     right: 0%;
     top: 25%;
+}
+
+@media (max-width: 1260px) {
+    .item {
+        height: 40rem;
+        top: 35%;
+    }
+    .info {
+        margin: 0 0 0 12rem;
+    }
+}
+
+@media (max-width: 900px) {    
+    .bodier {
+        display: block;
+    }
+    .info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "title" "image" "subtitle";
+        margin: 0;
+        width: 100%;
+    }
+    .title {
+        grid-area: title;
+        margin: 6rem 0 0 8rem;
+        font-size: 2rem;
+        text-align: start;
+    }
+    .subTitle {
+        display: grid;
+        width: 100vw;
+        grid-area: subtitle;
+    }
+    .item {
+        position: relative;
+        grid-area: image;
+        top: auto;
+        margin: 7rem auto auto;
+    }
+    .text {
+        margin: 0;
+        text-align: center;
+    }
+    .text h4 {
+        margin: auto;
+    }
+    .text h3 {
+        margin: 2rem auto auto;
+    }
+    .text p {
+        width: 60%;
+        margin: 3rem auto auto;
+    }
+    .navTech {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .text p {
+        width: 75%;
+    }
+    .title {
+        margin: 6rem auto auto;
+        text-align: center;
+    }
 }

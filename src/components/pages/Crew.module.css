@@ -1,10 +1,9 @@
 .main {
     width: 100vw;
     height: 100vh;
-    background: url('../../img/bg-crew.jpg');
+    background: url('../../img/background/bg-crew.jpg');
     background-size: cover;
     background-clip: border-box;
-
     color: white;
 }
 
@@ -26,7 +25,7 @@
     margin: 0;    
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 300;
-    margin: 8.5rem auto 0 0;
+    margin: 8.5rem auto 0 23rem;
 }
 
 .subTitle strong {
@@ -36,7 +35,7 @@
 
 .info h4 {
     font-size: 2.8rem;
-    margin: 16.4rem 0 0 0;
+    margin: 5rem 0 0 0;
     color: rgba(255, 255, 255, 0.281);
     font-family: 'Bellefair', serif;
     font-weight: 200;
@@ -64,4 +63,95 @@
     position: absolute;
     left: 50%;
     bottom: 0%;
+    margin: auto;
+}
+
+@media (max-width: 1160px) {
+    .info {
+        margin: 0 0 0 15rem;
+    }
+    .subTitle {
+        margin-left: 15rem;
+    }
+    .persona {
+        height: 55rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .main {        
+        height: 100vh;
+    }
+    .bodier {
+        display: flex;
+        flex-direction: column;
+        height: 95%;
+    }
+    .info {
+        width: 100vw;
+        height: max-content;
+        margin: 0;
+        text-align: center;
+    }
+    .subTitle {
+        margin: 6rem 0 0 8rem;
+        font-size: 2rem;
+        text-align: start;
+    }
+    .info h4 {
+        margin: 5rem auto auto;
+    }
+    .info h3 {
+        margin: 1rem auto auto
+    }
+    .info p {
+        margin: 2rem auto 5rem auto;
+        width: 50%;
+    }
+    .persona {
+        height: 100%;
+        width: 50rem;
+        height: initial;
+        margin: 3rem auto 0;
+        position: relative;
+        bottom: 0%;
+        left: auto;
+        align-items: flex-end;
+        border-bottom: .2rem solid rgba(255, 255, 255, 0.157);
+    }
+}
+
+@media (max-width: 600px) {
+    .persona {
+        order: 2;
+    }
+    .info {
+        order: 3;
+        display: flex;
+        flex-direction: column;
+    }
+    .subTitle {
+        order: 1;
+        margin: 6rem auto auto;
+        text-align: center;
+    }
+    .navCrew {
+        margin: 5rem 0 0 0;
+        order: 1;
+    }
+    .info h4 {
+        order: 2;
+    }
+    .info h3 {
+        order: 3;
+    }
+    .info p {
+        order: 4;
+    }
+    .persona {
+        width: 30rem;
+        padding: 0 3rem;
+        border-bottom: .2rem solid rgba(255, 255, 255, 0.157);
+        margin-bottom: 0;
+    }
 }
