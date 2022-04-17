@@ -5,6 +5,8 @@
     background-size: cover;
     background-clip: border-box;
     color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .bodier {
@@ -141,6 +143,7 @@
     }
     .info h4 {
         order: 2;
+        margin: 0;
     }
     .info h3 {
         order: 3;

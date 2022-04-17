@@ -4,8 +4,9 @@
     background: url('../../img/background/bg-tech.jpg');
     background-size: cover;
     background-clip: border-box;
-
     color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .bodier {
@@ -72,14 +73,14 @@
 .item {
     height: 52.8rem;
     position: absolute;
-    right: 0%;
-    top: 25%;
+    right: 0.8%;
+    top: 22%;
+    z-index: 0;
 }
 
 @media (max-width: 1260px) {
     .item {
         height: 40rem;
-        top: 35%;
     }
     .info {
         margin: 0 0 0 12rem;
@@ -113,6 +114,8 @@
         grid-area: image;
         top: auto;
         margin: 7rem auto auto;
+        width: 100%;
+        height: auto;
     }
     .text {
         margin: 0;
@@ -126,7 +129,7 @@
     }
     .text p {
         width: 60%;
-        margin: 3rem auto auto;
+        margin: 3rem auto 5rem;
     }
     .navTech {
         width: 100vw;

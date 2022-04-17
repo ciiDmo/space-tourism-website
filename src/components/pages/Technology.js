@@ -8,11 +8,15 @@ import styles from "./Technology.module.css";
 import vehicle from "../../img/technology/space-vehicle.jpg";
 import spaceport from "../../img/technology/space-port.jpg";
 import capsule from "../../img/technology/space-capsule.jpg";
+import vehicleTablet from "../../img/technology/space-vehicle-tablet.jpg";
+import spaceportTablet from "../../img/technology/space-port-tablet.jpg";
+import capsuleTablet from "../../img/technology/space-capsule-tablet.jpg";
 
 function Technology() {
   const [texto, setTexto] = useState("");
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
+  const [imageLarge, setImageLarge] = useState("");
   const [tech, setTech] = useState("vehicle");
 
   const [vehicleStyle, setVehicleStyle] = useState("");
@@ -22,18 +26,21 @@ function Technology() {
   useEffect(() => {
     if (tech === "vehicle") {
       setImage(vehicle);
+      setImageLarge(vehicleTablet);
       setVehicleStyle("techActived");
       setSpaceportStyle("techHovered");
       setCapsuleStyle("techHovered");
     }
     if (tech === "spaceport") {
       setImage(spaceport);
+      setImageLarge(spaceportTablet);
       setVehicleStyle("techHovered");
       setSpaceportStyle("techActived");
       setCapsuleStyle("techHovered");
     }
     if (tech === "capsule") {
       setImage(capsule);
+      setImageLarge(capsuleTablet);
       setVehicleStyle("techHovered");
       setSpaceportStyle("techHovered");
       setCapsuleStyle("techActived");
@@ -72,13 +79,13 @@ function Technology() {
             SPACE LAUNCH 101
           </h5>
           <div className={styles.subTitle}>
-              <div className={styles.navTech}>
-            <NavbarTech
-              setTechSon={setTech}
-              customVehicle={vehicleStyle}
-              customPort={spaceportStyle}
-              customCapsule={capsuleStyle}
-            />
+            <div className={styles.navTech}>
+              <NavbarTech
+                setTechSon={setTech}
+                customVehicle={vehicleStyle}
+                customPort={spaceportStyle}
+                customCapsule={capsuleStyle}
+              />
             </div>
             <div className={styles.text}>
               <h4>THE TERMINOLOGY...</h4>
@@ -86,7 +93,10 @@ function Technology() {
               <p>{texto}</p>
             </div>
           </div>
-          <img src={image} alt={name} className={styles.item} />
+          <picture>
+            <source media="(max-width: 900px)" srcSet={imageLarge} />
+            <img src={image} alt={name} className={styles.item} />
+          </picture>
         </div>
       </div>
     </div>

@@ -4,6 +4,8 @@
     background: url('../../img/background/bg-home.jpg');
     background-size: cover;
     background-clip: border-box;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -20,7 +22,7 @@
 
 .info {
     flex-direction: column;
-    margin: 25rem auto auto auto;
+    margin: 25rem auto 5rem auto;
     max-width: 48rem;
     color: hsl(231,77%,90%);
 }
