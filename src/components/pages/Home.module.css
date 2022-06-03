@@ -74,7 +74,7 @@
     background-color: white;
     border-radius: 25rem;
     transition-timing-function: ease-in-out;
-    transition: 0.8s;
+    transition: 0.8s; 
 }
 
 @media (max-width: 900px) {

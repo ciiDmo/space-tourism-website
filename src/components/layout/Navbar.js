@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 import styles from "./Navbar.module.css";
 
 import hopeStar from "../../img/hope-star.svg";
-import { useState } from "react";
 
 function Navbar({
   customHome,
@@ -36,22 +36,22 @@ function Navbar({
         onClick={changeMenu}
       ></div>
       <ul className={`${styles.menu} ${styles[showNav]}`}>
-        <li className={`${styles.direction} ${styles[customHome]}`}>
+        <li data-testid="home-itemlist" className={`${styles.direction} ${styles[customHome]}`}>
           <Link to="/" className={`${styles.tagA}`}>
             <strong>00 </strong>HOME
           </Link>
         </li>
-        <li className={`${styles.direction} ${styles[customDestination]}`}>
+        <li data-testid="destination-itemlist" className={`${styles.direction} ${styles[customDestination]}`}>
           <Link to="/Destination" className={`${styles.tagA}`}>
             <strong>01 </strong>DESTINATION
           </Link>
         </li>
-        <li className={`${styles.direction} ${styles[customCrew]}`}>
+        <li data-testid="crew-itemlist" className={`${styles.direction} ${styles[customCrew]}`}>
           <Link to="/Crew" className={`${styles.tagA}`}>
             <strong>02 </strong>CREW
           </Link>
         </li>
-        <li className={`${styles.direction} ${styles[customTechnology]}`}>
+        <li data-testid="tech-itemlist" className={`${styles.direction} ${styles[customTechnology]}`}>
           <Link to="/Technology" className={`${styles.tagA}`}>
             <strong>03 </strong>TECHNOLOGY
           </Link>
